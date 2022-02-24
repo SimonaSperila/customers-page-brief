@@ -1,5 +1,6 @@
 img {
   max-width: 100%;
+  height: auto;
 }
 .sr-only {
   position: absolute;
@@ -35,7 +36,7 @@ img {
 }
 .customer img {
   width: 100%;
-  max-height: 110px;
+  height: 110px;
 }
 
 @media (min-width: 992px) {
@@ -43,4 +44,31 @@ img {
     max-width: 900px;
     margin: 0 auto;
   }
+}
+
+.quote-background svg {
+  height: 32px;
+}
+.quote-background svg path {
+  fill: #fa8072;
+}
+.review-likes svg {
+  height: 20px;
+}
+.review-likes svg path {
+  fill: #10b981;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.quote-background {
+  background-color: #fff;
+  transform: matrix(1, 0, 0, 1, 0, -16);
+}
+.person-img {
+  height: 48px;
+  width: 48px;
 }

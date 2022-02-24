@@ -187,3 +187,16 @@ sortOrderDropdown.addEventListener("change", () => {
     }
   }
 });
+
+const readMore = document.querySelector(".read-more");
+const btnReadMore = document.querySelector(".btn-read-more");
+
+btnReadMore.addEventListener("click", () => {
+  if (readMore.classList.contains("d-none")) {
+    readMore.classList.remove("d-none");
+    btnReadMore.innerHTML = "Read less";
+  } else {
+    readMore.classList.add("d-none");
+    btnReadMore.innerHTML = "Read the full review";
+  }
+});
