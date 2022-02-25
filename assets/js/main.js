@@ -166,6 +166,8 @@ const orderRelevance = (rel) => {
   displayClients(rel);
 };
 
+orderRelevance(clients);
+
 sortOrderDropdown.addEventListener("change", () => {
   const sortByValueOrder = sortOrderDropdown.value;
   if (!customer.length) {
