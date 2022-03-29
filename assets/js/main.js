@@ -93,7 +93,7 @@ const displayClients = (a) => {
   a.forEach(({ logo, name }) => {
     result += `
        <div class="customer col-6 col-sm-6 col-lg-3">
-        <div class="p-3 border bg-light"><img src="assets/images/${logo}" alt="${name} logo"  width="265px" height="145px" /></div>
+        <div class="p-3 border bg-light"><img src="assets/images/${logo}" alt="${name} logo"  width="265" height="145" /></div>
        </div>
       `;
   });
@@ -170,9 +170,6 @@ orderRelevance(clients);
 
 sortOrderDropdown.addEventListener("change", () => {
   const sortByValueOrder = sortOrderDropdown.value;
-  if (!customer.length) {
-    return null;
-  }
   if (sortByValueOrder == "Alphabetical") {
     orderAlphabetical(clients);
     if (sortByValueCountry !== "All" || sortByValueIndustry !== "All") {
@@ -183,9 +180,6 @@ sortOrderDropdown.addEventListener("change", () => {
     orderRelevance(clients);
     if (sortByValueCountry !== "All" || sortByValueIndustry !== "All") {
       orderRelevance(clientsCopyAll);
-    }
-    if (!customer.length) {
-      return null;
     }
   }
 });

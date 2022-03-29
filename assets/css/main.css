@@ -72,3 +72,10 @@ img {
   height: 48px;
   width: 48px;
 }
+.hidden {
+  display: none;
+}
+.clients:empty:before {
+  content: "No items found!";
+  margin-left: 15px;
+}
